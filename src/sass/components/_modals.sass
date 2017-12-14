@@ -1,0 +1,421 @@
+.modal-wrapper
+  width: 100%
+  height: 100%
+  position: fixed
+  opacity: 0
+  transform: translateY(-5000px);
+  overflow: auto
+  &.is-active
+    opacity: 1
+    top: 0
+    left: 0
+    transform: none
+    position: fixed  
+.modal-textual
+  top: 125px
+  +center(horizontal)
+  position: absolute
+  width: 100%
+  max-width: 862px
+  max-height: 800px
+  background-color: $white
+  color: $color-text
+  padding-top: 96px
+  +r(1367)
+    padding-top: 77px
+    max-height: 600px
+  +r(768)
+    padding-top: 52px
+    max-width: 600px
+    width: 78%
+    max-height: 880px
+  +r(420)
+    max-height: 100vh
+    top: 0
+    width: 100%
+    padding-top: 50px
+  &__content
+    position: relative
+    max-height: 703px
+    overflow: hidden
+    padding: 0 0 78px 
+    +r(1366)
+      max-height: 470px
+      padding-bottom: 45px
+    +r(768)
+      max-height: 772px
+      padding-bottom: 48px
+    +r(420)
+      padding-bottom: 36px
+      max-height: calc( 100vh - 50px)
+  &__inner
+    position: relative
+    padding-left: 98px
+    padding-right: 98px
+    +r(1367)
+      padding-left: 56px  
+      padding-right: 56px
+    +r(420)
+      padding-left: 30px
+      padding-right: 30px
+  &__close
+    position: absolute
+    z-index: 1000
+    right: 9px
+    top: 10px
+    width: 16px
+    height: 16px
+    cursor: pointer  
+    .icon
+      width: 100%
+      height: 100%
+  &__whitespace
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 100%
+    height: 80px
+    background-color: $white
+    +r(1366)
+      height: 45px
+    +r(420)
+      height: 36px
+
+  &__title
+    margin-bottom: 35px
+    +r(420)
+      margin-bottom: 20px
+  &__heading
+    line-height: 1
+  &__descr
+    p
+      word-spacing: 0px
+      font-size: 16px
+      margin-bottom: 28px
+      line-height: 1.875
+      +r(420)
+        font-size: 12px
+        line-height: 1.5
+        margin-bottom: 15px
+      
+
+// scrollbar
+
+.ps__thumb-x, .ps__thumb-y
+  width: 8px
+  +borad(4px)
+  background-color: $color-scrollbar
+
+.ps__thumb-y
+  right: 8px
+
+.public-modal
+  &__wrap
+    position: relative
+    max-width: 1866px
+    padding-left: 63px
+    padding-right: 63px
+    margin: 0 auto
+    height: 912px
+    text-align: center   
+    +r(1367)
+      max-width: 1307px
+      padding-left: 41px
+      padding-right: 41px
+      height: 680px
+    +r(1025)
+      max-width: 966px
+      height: 680px
+    +r(798)
+      max-width: 708px
+    +r(769)
+      height: 934px
+    +r(500)
+      max-width: 323px
+      padding-left: 23px
+      padding-right: 23px
+  &__inner
+    background-color: $white
+    position: relative
+    display: inline-block
+  &__left
+    position: relative
+    height: 912px
+    margin-right: 360px
+    display: flex
+    align-items: center
+    background-color: $black 
+    +r(1367)
+      height: 680px
+    +r(1025)
+      margin-right: 300px
+    +r(795)
+      max-width: 300px
+    +r(769)
+      max-width: 100%
+      width: 100%
+      margin-right: 0
+      height: 492px
+      justify-content: center
+    +r(500)
+      height: 221px
+  &__img
+      display: flex
+      height: 100%
+      min-width: 400px
+      overflow: hidden
+      align-items: center
+      justify-content: center
+      +r(795)
+        min-width: 100%
+      +r(700)
+        min-width: 100%
+      img
+        width: auto
+        max-height: 100%
+        margin: 0 auto
+  &__right
+    position: absolute
+    height: 912px
+    width: 360px
+    top: 0
+    right: 0
+    padding-bottom: 90px
+    +r(1367)
+      height: 680px
+      padding-bottom: 80px
+    +r(1025)
+      width: 300px
+    +r(769)
+      width: 100%
+      position: relative
+      height: 443px
+  &__header
+    position: relative
+    background-color: #f8f8f8
+    padding-top: 41px
+    padding-left: 41px
+    min-height: 120px
+    +r(1367)
+      min-height: 100px
+    +r(500)
+      min-height: 80px
+      padding-left: 23px
+      padding-top: 20px
+  &__textual
+    position: relative
+    overflow: hidden
+    height: 700px
+    +r(1367)
+      height: 500px
+    +r(769)
+      height: 260px
+  &__about
+    padding: 41px 40px
+    +r(769)
+      padding: 28px 23px 0 43px
+    +r(500)
+      padding: 18px 23px
+  &__row
+    text-align: left
+    margin-bottom: 31px
+    font-size: 16px
+    line-height: 1.5
+    +r(769)
+      margin-bottom: 18px
+      font-size: 14px
+    +r(500)
+      font-size: 12px
+  &__footer
+    position: absolute
+    bottom: 0
+    left: 0
+    height: 80px
+    padding-left: 40px
+    width: 100%
+    +r(1367)
+      height: 70px
+  &__copyright
+    +center(horizontal)
+    bottom: -44px
+    z-index: 100
+    width: 100%
+    max-width: 500px
+    +r(769)
+      bottom: -480px
+    +r(500)
+
+
+.company-info
+  display: flex
+  position: absolute
+  width: 300px
+  +center(vertical)
+  +r(500)
+    position: relative
+    transform: none
+    width: 100%
+    top: 0
+  &__logos
+    position: relative
+    flex-basis: 75px
+    margin-right: 11px
+  &__logo
+    display: block
+    position: absolute
+    top: 0
+    width: 42px
+    height: 42px
+    border-radius: 50%
+    &_1
+      left: 0
+    &_2
+      left: 32px
+  &__title
+    text-decoration: none
+    color: inherit
+    text-align: left
+    // display: inline-block
+    // overflow: hidden
+    // box-sizing: border-box
+    // max-width: 200px
+    // white-space: nowrap
+    // text-overflow: ellipsis
+  &__heading
+    font-weight: 400
+    font-size: 16px
+    // display: inline
+  &__lastseen
+    color: #90949c
+    font-size: 14px
+.fullLink-box
+  &__header
+    margin-bottom: 2px
+    +r(769)
+      margin-bottom: 0
+  &__link
+    color: $mediumSpringGreen
+    word-break: break-all
+
+.taglist-box
+  color: $mediumSpringGreen
+  &__item
+    display: inline-block
+    margin-right: 5px
+    a 
+      color: inherit
+      text-decoration: none
+
+.social-box
+  text-align: left
+  display: flex
+  text-decoration: none
+  &__icon
+    margin-right: 16px
+    +image("fb_thumbnail.png")
+    +cover
+    border-radius: 3px
+    width: 40px
+    height: 40px
+  &__text
+    font-size: 14px
+    color: #3b5998
+   
+  // mfp styling rewrite
+
+.mfp-ajax-holder .mfp-content, .mfp-inline-holder .mfp-content 
+  width: auto !important
+.mfp-container
+  +r(500)
+    padding: 0
+.mfp-close
+  // position: fixed
+  top: 6px
+  right: 20px
+  width: 25px
+  height: 25px
+  line-height: 25px 
+  opacity: 1
+  z-index: 1000
+  font-size: 28px
+  color: $white !important
+  &:active
+    top: 6px
+  +r(769)
+    right: 12px
+  +r(500)
+    top: 5px
+    height: 20px
+    width: 20px
+    right: 9px
+    font-size: 30px
+.mfp-content
+  +r(1366)
+    top: -20px
+  +r(1024)
+    top: -22px
+  +r(768)
+    top: 20px
+  +r(500)
+    top: 24px
+// hide standart arrows
+
+.hidden-arrow
+  transform: translateY(-2000px)
+
+// create custom arrows
+
+.controll-arrow
+  position: relative
+  background-color: transparent
+  z-index: 100
+  height: 100%
+  +center(vertical)
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 63px
+  +r(1367)
+    width: 41px
+  +r(768)
+    transform: none
+    height: 492px
+    top: 0
+  +r(500)
+    width: 23px
+    height: 221px
+  &:hover
+    // background-color: $mediumSpringGreen
+    cursor: pointer
+  &_right
+    right: 0
+  &_left
+    left: 0
+  &__btn
+    background-color: transparent
+    width: 23px
+    height: 51px
+    +cover
+    +r(1367)
+      width: 16px
+      height: 36px
+    +r(769)
+      position: absolute
+      top: 249px
+    +r(500)
+      top: 111px
+      width: 10px
+      height: 24px
+    &_right 
+      +image("right-chevron.svg")
+    &_left  
+      +image("left-chevron.svg")
+        
+    
+
+//scrollbar
+.ps__rail-y
+  &:hover > .ps__thumb-y, &:focus > .ps__thumb-y
+    background-color: #aaa
+    opacity: 0.6
+    width: 8px

@@ -1,0 +1,65 @@
+---
+title: Public page
+
+header: {
+
+  logo: "l-sales_force.png",
+  logoAlt: "Sales force",
+  heading: "surfer"
+
+}
+
+
+pages: [
+	{link: "public_page1.html", text: "Layout 1",active: true  },
+	{link: "public_page2.html", text: "Layout 2" },
+	{link: "public_page3.html", text: "Layout 3" },
+	{link: "public_page4.html", text: "Layout 4" },
+  {link: "public_page5.html", text: "Layout 5" },
+  {link: "public_page6.html", text: "Layout 6" },
+
+	
+]
+
+
+---
+
+
+{% extends "layouts/_layout-public.html" %} 
+
+
+{% block content %}
+
+
+
+{% include "partials/header/_header.html" %}
+
+<!-- begin main -->
+<main class='public-main js-public-data' data-public-page="1" data-padd="" >
+
+<!-- begin main__inner -->
+<div class='public-main__inner'>
+
+<!-- begin container -->
+<div class='container container_gapped'>
+<div class="masonry-container js-masonry-container">
+{% include "partials/gallery/_plate-masonry.html" %}
+</div>
+
+
+</div>
+<!-- end container -->
+
+
+</div>
+<!-- end main__inner -->
+
+</main>
+<!-- end main -->
+
+
+
+
+
+
+{% endblock %}

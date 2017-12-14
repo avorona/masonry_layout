@@ -1,0 +1,38 @@
+<!-- begin form-create -->
+<form class='form-create js-validate-board' autocomplete="off" >
+  <h2 class="form-create__heading">{{ formHeading }}</h2>
+
+  <fieldset class="form-create__textfield">
+
+  <!-- begin form-create__input -->
+    <div class='form-create__input form-create__input_name'>
+      <input id="sign-name" type="text" name="name" value="" class="js-s-input" autocomplete="off" />
+      <label for="sign-name" class="form-create__label js-s-label">Acme inc.</label>
+    </div>
+    <!-- end form-create__input -->
+
+<!-- begin form-create__input -->
+<div class='form-create__input form-create__input_checkbox'>
+<input id="agreement" type="checkbox" name="agreement" required />
+<div class="form-create__text">
+<p class="help-text"><label for="agreement" class="form-create__label form-create__label_check js-s-checkLabel"><span class="form-create__iconcheck">{{mixins.icon('check_a')}}</span></label> {{  helpText | safe }}</p>
+</div>
+</div>
+<!-- end form-create__input -->
+
+<!-- begin form-create__recaptcha -->
+<div class='form-create__recaptcha js-form-recaptcha'>
+ <div class="g-recaptcha" data-sitekey="6LduNDsUAAAAACgagsg_9XofACXgNsiydVn6ZH4q"></div>
+</div>
+<!-- end form-create__recaptcha -->
+
+
+
+  </fieldset>
+
+<div class="form-create__submit">
+ <input type="submit" class="btn btn_cta btn_step" value="Ok, let`s do this" />
+</div>
+
+</form>
+<!-- end form-create -->

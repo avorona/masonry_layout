@@ -1,0 +1,111 @@
+
+
+<!-- begin plate -->
+<div class='plate plate_{{ gallery.modif }} js-masonry' data-padd="{{ gallery.modif }}">
+
+{# {% endif %} #}
+
+  <div class="grid-sizer"></div>
+  <div class="gutter-sizer"></div>
+  
+{% for t in gallery.items %}
+
+{% if gallery.modif %}
+
+
+
+<div class="masonry__item js-masonry__item">
+
+
+{% if t.size === "sm" %}
+
+{% for item in t.img %}
+
+
+<a href="#" class="plate__item plate__item_{{ t.size }} plate__item_{{ t.size }}_{{ gallery.modif }} plate__item_{{ gallery.modif }} " 
+style="
+
+background-image: url('img/gallery/{{ item.src }}');
+background-position: {{ item.bposition }};
+background-size: {{ item.bsize }};
+"
+></a>
+
+
+
+
+{% endfor %}
+
+{% else %}
+
+<a href="#" class="plate__item plate__item_{{ t.size }} plate__item_{{ t.size }}_{{ gallery.modif }} plate__item_{{ gallery.modif }} " 
+style="
+
+background-image: url('img/gallery/{{ t.src }}');
+background-position: {{ t.bposition }};
+background-size: {{ t.bsize }};
+"
+></a>
+
+
+{% endif %}
+
+</div>
+
+
+
+{% else %}
+
+
+
+<div class="masonry__item js-masonry__item">
+
+
+{% if t.size === "sm" %}
+
+{% for item in t.img %}
+
+
+<a href="#" class="plate__item plate__item_{{ t.size }} plate__item_{{ t.size }}_{{ gallery.modif }} plate__item " 
+style="
+
+background-image: url('img/gallery/{{ item.src }}');
+background-position: {{ item.bposition }};
+background-size: {{ item.bsize }};
+"
+></a>
+
+
+
+
+{% endfor %}
+
+{% else %}
+
+<a href="#" class="plate__item plate__item_{{ t.size }} plate__item_{{ t.size }}_{{ gallery.modif }} plate__item " 
+style="
+
+background-image: url('img/gallery/{{ t.src }}');
+background-position: {{ t.bposition }};
+background-size: {{ t.bsize }};
+"
+></a>
+
+
+{% endif %}
+
+</div>
+
+
+
+{% endif %}
+
+
+
+{% endfor %}
+
+
+
+
+</div>
+<!-- end plate -->

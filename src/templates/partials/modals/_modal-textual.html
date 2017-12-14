@@ -1,0 +1,53 @@
+
+<!-- begin js-privacy-policy-modal  -->
+<div class='modal-wrapper js-privacy-policy-modal '>
+
+<!-- begin modal-textual -->
+<div class='modal-textual js-actual-modal'>
+
+<span class="modal-textual__close js-close-textual-modal">{{mixins.icon('close')}}</span>
+<!-- begin modal-textual__content -->
+<div class='modal-textual__content  js-c-scrollbar '>
+
+<!-- begin modal-textual__inner -->
+<div class='modal-textual__inner '>
+
+<!-- begin modal-textual__title -->
+<div class='modal-textual__title'>
+<h3 class="modal-textual__heading">{{ modalTextualHeading }}</h3>
+</div>
+<!-- end modal-textual__title -->
+
+<!-- begin modal-textual__descr -->
+<div class='modal-textual__descr'>
+
+{% for t in modalTextual %}
+
+    <p>{{t.descr}}</p>
+
+{% endfor %}
+
+
+</div>
+<!-- end modal-textual__descr -->
+
+</div>
+<!-- end modal-textual__inner -->
+
+
+
+</div>
+<!-- end modal-textual__content -->
+
+
+<!-- begin modal-textual__whitespace -->
+<div class='modal-textual__whitespace'>
+
+</div>
+<!-- end modal-textual__whitespace -->
+
+</div>
+<!-- end modal-textual -->
+</div>
+<!-- end js-privacy-policy-modal  -->
+

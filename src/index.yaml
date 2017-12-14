@@ -1,0 +1,26 @@
+ProjectTitle: social-board
+
+PageList:
+- file: sign_in.html
+  ready: 50
+- file: sign_up.html
+  ready: 50
+- file: create_board.html
+  ready: 50
+- file: create_board.html
+  ready: 50
+- file: public_page1.html
+  ready: 50
+- file: public_page2.html
+  ready: 50
+- file: public_page3.html
+  ready: 50
+- file: public_page4.html
+  ready: 50
+- file: public_page5.html
+  ready: 50
+- file: public_page6.html
+  ready: 50
+
+
+

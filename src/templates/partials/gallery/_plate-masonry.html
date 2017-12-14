@@ -1,0 +1,88 @@
+
+
+<!-- begin plate -->
+<div class='plate  js-masonry' data-padd="">
+
+
+
+{# {% endif %} #}
+
+  <div class="grid-sizer"></div>
+  <div class="gutter-sizer"></div>
+ 
+
+{% raw %}
+<!-- MARSONY template HTML -->
+
+<script type="text/html" id="photo-item-template-sm">
+
+<div class="masonry__item js-masonry__item">
+
+</script>
+
+<script type="text/html" id="photo-item-template-sm-inner" >
+
+<a href="img/gallery/{{src}}" class="plate__item plate__item_{{size}} js-info-modal" 
+style="
+
+background-image: url('img/gallery/{{src}}');
+background-position: {{bposition}};
+background-size: {{bsize}};
+"
+></a>
+
+
+</script>
+
+
+<script type="text/html" id="photo-item-template-sm-pad-inner">
+
+<a href="img/gallery/{{src}}" class="plate__item plate__item_{{size}} plate__item_{{size}}_{{modif}} js-info-modal" 
+style="
+
+background-image: url('img/gallery/{{src}}');
+background-position: {{bposition}};
+background-size: {{bsize}};
+"
+></a>
+
+</script>
+
+
+<script type="text/html" id="photo-item-template-lg">
+
+
+<div class="masonry__item js-masonry__item">
+<a href="img/gallery/{{src}}" class="plate__item plate__item_{{size}} js-info-modal" 
+style="
+
+background-image: url('img/gallery/{{src}}');
+background-position: {{bposition}};
+background-size: {{bsize}};
+"
+></a>
+</div>
+</script>
+
+
+
+<script type="text/html" id="photo-item-template-lg-pad">
+
+<div class="masonry__item js-masonry__item">
+<a href="img/gallery/{{src}}" class="plate__item plate__item_{{size}} plate__item_{{size}}_{{modif}} js-info-modal" 
+style="
+
+background-image: url('img/gallery/{{src}}');
+background-position: {{bposition}};
+background-size: {{bsize}};
+"
+></a>
+</div>
+</script>
+
+{% endraw %}
+
+
+
+</div>
+<!-- end plate -->

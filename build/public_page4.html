@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <title>Public page</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#fff" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" media="all" href="css/app.css" /> </head>
+
+  <body class="page page_grey">
+    <!-- BEGIN content -->
+    <div class="out">
+      <!-- begin header-public -->
+      <header class='header-public'>
+        <!-- begin container -->
+        <div class='container'>
+          <!-- begin header-public__inner -->
+          <div class='header-public__inner'>
+            <!-- begin navigation -->
+            <nav class='nav'>
+              <ul class="nav__list">
+                <li class="nav__item"><a href="public_page1.html" class="nav__link">Layout 1</a></li>
+                <li class="nav__item"><a href="public_page2.html" class="nav__link">Layout 2</a></li>
+                <li class="nav__item"><a href="public_page3.html" class="nav__link">Layout 3</a></li>
+                <li class="nav__item is-active"><a href="public_page4.html" class="nav__link">Layout 4</a></li>
+                <li class="nav__item"><a href="public_page5.html" class="nav__link">Layout 5</a></li>
+                <li class="nav__item"><a href="public_page6.html" class="nav__link">Layout 6</a></li>
+              </ul>
+            </nav>
+            <!-- end navigation -->
+          </div>
+          <!-- end header-public__inner -->
+        </div>
+        <!-- end container -->
+      </header>
+      <!-- end header-public -->
+      <!-- begin main -->
+      <main class='public-main  js-public-data' data-public-page="4" data-padd="padd">
+        <!-- begin main__inner -->
+        <div class='public-main__inner'>
+          <!-- begin container -->
+          <div class='container container_gapped'>
+            <div class="masonry-container js-masonry-container">
+              <!-- begin plate -->
+              <div class='plate  js-masonry' data-padd="">
+                <div class="grid-sizer"></div>
+                <div class="gutter-sizer"></div>
+                <!-- MARSONY template HTML -->
+                <script type="text/html" id="photo-item-template-sm">
+                  <div class="masonry__item js-masonry__item">
+                </script>
+                <script type="text/html" id="photo-item-template-sm-inner"> <a href="img/gallery/{{src}}" class="plate__item plate__item_{{size}} js-info-modal" style="
+
+background-image: url('img/gallery/{{src}}');
+background-position: {{bposition}};
+background-size: {{bsize}};
+"></a> </script>
+                <script type="text/html" id="photo-item-template-sm-pad-inner"> <a href="img/gallery/{{src}}" class="plate__item plate__item_{{size}} plate__item_{{size}}_{{modif}} js-info-modal" style="
+
+background-image: url('img/gallery/{{src}}');
+background-position: {{bposition}};
+background-size: {{bsize}};
+"></a> </script>
+                <script type="text/html" id="photo-item-template-lg">
+                  <div class="masonry__item js-masonry__item"> <a href="img/gallery/{{src}}" class="plate__item plate__item_{{size}} js-info-modal" style="
+
+background-image: url('img/gallery/{{src}}');
+background-position: {{bposition}};
+background-size: {{bsize}};
+"></a> </div>
+                </script>
+                <script type="text/html" id="photo-item-template-lg-pad">
+                  <div class="masonry__item js-masonry__item"> <a href="img/gallery/{{src}}" class="plate__item plate__item_{{size}} plate__item_{{size}}_{{modif}} js-info-modal" style="
+
+background-image: url('img/gallery/{{src}}');
+background-position: {{bposition}};
+background-size: {{bsize}};
+"></a> </div>
+                </script>
+                </div>
+                <!-- end plate -->
+              </div>
+            </div>
+            <!-- end container -->
+          </div>
+          <!-- end main__inner -->
+      </main>
+      <!-- end main -->
+      </div>
+      <!-- END content -->
+      <!-- BEGIN scripts -->
+      <script type="text/javascript" src="js/app.js"></script>
+      <!-- END scripts -->
+  </body>
+
+</html>
