@@ -102,6 +102,16 @@ class Modal {
   }
 
   _generateControlls() {
+    const oldControlls = [].slice.call(
+      document.querySelectorAll('.controll-arrow')
+    );
+
+    if (oldControlls) {
+      oldControlls.forEach(node => {
+        node.remove();
+      });
+    }
+
     let prev = document.createElement('div');
     prev.setAttribute('class', 'controll-arrow controll-arrow_left');
     // prev.classList.add('controll-arrow', 'controll-arrow_left');
